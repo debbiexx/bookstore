@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 //  import UserContext from '../UserContext';
+import { NavLink } from 'react-router-dom';
 import { Navigate, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -76,6 +77,9 @@ export default function Registration (){
                         <button className='submit' disabled>Sign Up</button>
                         }
                     </div>
+                    <small>Already have an account? <NavLink to="/login" style={{textDecoration:'none'}}>Click here </NavLink>to log in</small>
+
+                  
 
                 </form>
 
@@ -83,3 +87,4 @@ export default function Registration (){
         </div>
     )
 }
+{/* <small className='white-text'>Already have an account? <NavLink to="/login" style={{textDecoration:'none'}}>Click here</NavLink> to log in.</small> */}

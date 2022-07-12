@@ -12,7 +12,7 @@ import { ButtonCart, ButtonSign } from './Button';
 export default function AppNavbar () {
   
     return (
-        <Navbar expand="sm" variant="dark" className="nav-border px-sm-4">
+        <Navbar expand="lg"  className="nav-border px-sm-4">
         <Nav.Link as ={Link} to="/"><img src={logo} alt="logo" className='navbar-logo'/></Nav.Link>
         <ul className='navbar-nav align-items-center'>
             <li className='m-auto'>

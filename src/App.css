@@ -25,8 +25,8 @@
 .app-wrapper{
   background-color:var(--white);
   min-width: 350px;
-  min-height: 650px;
-  padding:30px;
+  min-height: 400px;
+  padding:50px;
   box-sizing: border-box;
   border-radius: 5px;
  
@@ -34,13 +34,10 @@
 .title{
   color:var(--pinkishRed);
   text-align: center;
-  margin:20px 0px 20px 0px;
+  margin:40px 0px 40px 0px;
 
 }
-.name,
 .email,
-.address,
-.mobileNo,
 .password{
   margin:20px;
   color:var(--lightGray);
@@ -98,8 +95,11 @@ button:active{
   color:#f80759;
 } */
 .clickHere{
-  display: flex;;
-  justify-content: center;
+ text-align: center;
+ justify-content: center;
+ padding-left: 35px;
+
+ 
   
 }
 /* Ending point for Registration & Login Styles */
@@ -110,6 +110,7 @@ button:active{
   background: var(--lightBlue);
   color:black;
   height: 70px;
+  width: 100%;
 }
 .navbar-logo{
   width: 50px;

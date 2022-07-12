@@ -1,10 +1,17 @@
 *{
   margin:0;
   padding:0;
+}
+:root{
+  --darkPink:linear-gradient(135deg, #850c62, #f80759);
+  --pinkishRed:#f80759;
+  --white:#fff;
+  --lightGray:#969292;
+  --gradientPink:#ab1dcf, #f80759;
 
 }
 .container{
-  background: linear-gradient(135deg, #850c62, #f80759);
+  background: var(--darkPink);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -13,7 +20,7 @@
 
 }
 .app-wrapper{
-  background-color: #fff;
+  background-color:var(--white);
   min-width: 350px;
   min-height: 650px;
   padding:30px;
@@ -21,7 +28,7 @@
   border-radius: 5px;
 }
 .title{
-  color:#f80759;
+  color:var(--pinkishRed);
   text-align: center;
   margin:20px 0px 20px 0px;
 
@@ -32,7 +39,7 @@
 .mobileNo,
 .password{
   margin:20px;
-  color:#969292;
+  color:var(--lightGray);
   font-size:16px;
 
 }
@@ -65,9 +72,9 @@
   text-transform: uppercase;
   font-size:20px;
   border-radius: 25px;
-  color: white;
+  color:var(--white);
   padding:10px 60px;
-  background: linear-gradient(to right, #ab1dcf, #f80759);
+  background: linear-gradient(to right,var(--gradientPink));
   box-shadow: rgba(0,0,0,0.3) 0px 19px 38px, 
                 rgba(0,0,0,0.22) 0px, 15px, 12px;
   margin:auto;
@@ -79,12 +86,17 @@
 button:active{
   transform: translateY(2px);
 }
-.form-success{
+/* .form-success{
   display: flex;;
   justify-content: center;
   margin-top:250px;
   min-width: 370px;
   color:#f80759;
+} */
+.clickHere{
+  display: flex;;
+  justify-content: center;
+  
 }
 
 /* .App {

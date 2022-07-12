@@ -77,7 +77,8 @@ export default function Registration (){
                         <button className='submit' disabled>Sign Up</button>
                         }
                     </div>
-                    <small>Already have an account? <NavLink to="/login" style={{textDecoration:'none'}}>Click here </NavLink>to log in</small>
+                    <small className='clickHere'>Already have an account?  &nbsp;
+                    <NavLink to="/login" style={{textDecoration:'none'}}><strong>Click here </strong> </NavLink>&nbsp;to login</small>
 
                   
 

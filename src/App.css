@@ -117,7 +117,7 @@ button:active{
   margin:0;
   padding:0;
 }
-.text-brand{
+.navbar-text{
   font-family:'Permanent Marker', cursive;
   color:black !important;
 }

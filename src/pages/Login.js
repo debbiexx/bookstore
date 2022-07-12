@@ -19,7 +19,7 @@ export default function Login(){
     }
 
     return(
-        <div className='container'>
+        <div className='main-wrapper'>
             <LoginStyle>
             <div className='login-wrapper'>
                 <div>

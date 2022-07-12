@@ -39,7 +39,7 @@ export default function Registration (){
 
     return(
    
-        <div className='container'>
+        <div className='main-wrapper'>
             <div className='app-wrapper'>
                 <div>
                     <h2 className='title'>Create Account</h2>

@@ -8,9 +8,12 @@
   --white:#fff;
   --lightGray:#969292;
   --gradientPink:#ab1dcf, #f80759;
+  --lightBlue: #DEF2F1;
+  
 
 }
-.container{
+/* Starting point for Registration & Login Styles */
+.main-wrapper{
   background: var(--darkPink);
   width: 100%;
   min-height: 100vh;
@@ -26,6 +29,7 @@
   padding:30px;
   box-sizing: border-box;
   border-radius: 5px;
+ 
 }
 .title{
   color:var(--pinkishRed);
@@ -98,6 +102,29 @@ button:active{
   justify-content: center;
   
 }
+/* Ending point for Registration & Login Styles */
+
+
+/* Styles for navbar */
+.nav-border{
+  background: var(--lightBlue);
+  color:black;
+  height: 70px;
+}
+.navbar-logo{
+  width: 50px;
+  height: 50px;
+  margin:0;
+  padding:0;
+}
+.text-brand{
+  font-family:'Permanent Marker', cursive;
+  color:black !important;
+}
+.dropdown-item{
+  font-size:small;
+}
+
 
 /* .App {
   text-align: center;

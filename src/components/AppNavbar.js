@@ -1,27 +1,44 @@
-import {Navbar, Nav} from 'react-bootstrap';
+//original app navbar layout
+
+
+
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../logo.png';
 import { ButtonCart, ButtonSign } from './Button';
 
+
+
 export default function AppNavbar () {
   
     return (
-        <Navbar bg="dark" expand="lg" variant="dark" className="nav-border px-sm-4">
+        <Navbar expand="sm" variant="dark" className="nav-border px-sm-4">
         <Nav.Link as ={Link} to="/"><img src={logo} alt="logo" className='navbar-logo'/></Nav.Link>
         <ul className='navbar-nav align-items-center'>
             <li className='m-auto'>
-            <Nav.Link as ={Link} to="/" className='text-brand'>eKomersiyoNegosyo</Nav.Link>
+                <small className='text-brand'>Welcome to our bookstore!</small>
             </li>
         </ul>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-                <Nav.Link as={Link} to="/" className='text-brand'>
+            <Nav.Link as={Link} to="/" className='text-brand'>
                     <ButtonCart>
                         <span className='mx-2'>
                         <i className="fa fa-cart-plus" />
                     </span>
-                    Products&nbsp;
+                    Home&nbsp;
+                    </ButtonCart>
+                    </Nav.Link>
+                    
+                <Nav.Link as={Link} to="/" className='text-brand'>
+                    <ButtonCart>
+                    Categories&nbsp;
+                    </ButtonCart>
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/" className='text-brand'>
+                    <ButtonCart>
+                    Best Sellers&nbsp;
                     </ButtonCart>
                     </Nav.Link>
                    

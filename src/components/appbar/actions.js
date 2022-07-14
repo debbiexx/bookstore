@@ -4,6 +4,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Colors } from "../../styles/theme";
+import {Nav} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function Actions({ matches }) {
 
@@ -56,7 +58,10 @@ export default function Actions({ matches }) {
               color: matches && Colors.secondary,
             }}
           >
+          <Nav.Link as={Link} to="/register">
             <PersonIcon />
+</Nav.Link>
+            
           </ListItemIcon>
         </ListItemButton>
         <Divider orientation="vertical" flexItem />

@@ -21,11 +21,7 @@ export const ProductImage = styled("img")(({ src, theme }) => ({
   height: 350,
   objectFit: 'cover',
   background: Colors.light_gray,
-  padding: '10px',
-//   [theme.breakpoints.down("sm")]: {
-//     width: "80%", 
-//     padding: '10px',
-//   },
+  padding: '30px',
   [theme.breakpoints.down("md")]: {
  width: "100%", 
  height:200,

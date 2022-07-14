@@ -59,7 +59,7 @@ import {
             alignItems="center"
             justifyContent={"space-between"}
           >
-            Product title
+            {/* Product title */}
             <IconButton onClick={onClose}>
               <CloseIcon />
             </IconButton>

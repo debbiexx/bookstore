@@ -18,11 +18,18 @@ export const Product = styled(Box)(({ theme }) => ({
 export const ProductImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
   width: "100%",
+  height: 350,
+  objectFit: 'cover',
   background: Colors.light_gray,
   padding: '10px',
+//   [theme.breakpoints.down("sm")]: {
+//     width: "80%", 
+//     padding: '10px',
+//   },
   [theme.breakpoints.down("md")]: {
-    width: "80%", 
-    padding: '24px',
+ width: "100%", 
+ height:200,
+padding: '24px',
   },
 }));
 

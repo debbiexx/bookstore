@@ -1,15 +1,40 @@
 //original app navbar layout
 
 
-
+import React, { useState, useEffect } from "react";
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../logo.png';
+// import * as Icons from "react-icons/fa";
 import { ButtonCart, ButtonSign } from './Button';
 
 
 
 export default function AppNavbar () {
+    const [mobile, setMobile] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 1065) {
+      setMobile(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1065) {
+        setMobile(true);
+      } else {
+        setMobile(false);
+        setSidebar(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   
     return (
         <Navbar expand="lg"  className="nav-border px-sm-4">

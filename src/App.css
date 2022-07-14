@@ -3,6 +3,7 @@
   padding:0;
 }
 :root{
+  --darkViolet:linear-gradient(to right bottom, #760C63, #470B4B);
   --darkPink:linear-gradient(135deg, #850c62, #f80759);
   --pinkishRed:#f80759;
   --white:#fff;
@@ -14,7 +15,7 @@
 }
 /* Starting point for Registration & Login Styles */
 .main-wrapper{
-  background: var(--darkPink);
+  background: var(--lightBlue);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -27,6 +28,9 @@
   min-width: 350px;
   min-height: 400px;
   padding:50px;
+  /* border-width: thin;
+  border-style: solid;
+  border-color:black; */
   box-sizing: border-box;
   border-radius: 5px;
  

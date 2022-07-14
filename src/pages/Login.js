@@ -51,10 +51,10 @@ export default function Login(){
 
 const LoginStyle = styled.div`
 .login-wrapper{
-    background-color:var(--white);
+     background-color:var(--white);
     min-width: 350px;
-    min-height: 400px;
-    padding:30px;
+    min-height: 500px;
+    padding:50px;
     box-sizing: border-box;
     border-radius: 5px;
 }
